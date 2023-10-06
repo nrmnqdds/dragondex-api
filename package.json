@@ -1,0 +1,16 @@
+{
+  "name": "dragondex-backend",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "axios": "^1.5.1",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

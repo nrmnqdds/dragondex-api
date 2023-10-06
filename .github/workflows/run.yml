@@ -1,0 +1,16 @@
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Schedule to run every Sunday at midnight (UTC)
+name: fetch-data
+jobs:
+  my-job:
+    name: my-job
+    runs-on: ubuntu-latest
+    steps:
+      # ...
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+
+      # run any `bun` or `bunx` command
+      - run: bun install
+      - run: bun index.ts
