@@ -1,7 +1,7 @@
+name: fetch-data
 on:
   schedule:
-    - cron: "0 0 * * 0" # Schedule to run every Sunday at midnight (UTC)
-name: fetch-data
+    - cron: "0 0 */2 * *" # Schedule to run every 2 days at midnight (UTC)
 jobs:
   my-job:
     name: my-job
