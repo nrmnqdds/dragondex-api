@@ -29,13 +29,13 @@ An API endpoint that serves data from Dragon City Fandom Page.
 ## Usage
 
 ### Get all dragons
-`https://github.com/nrmnqdds/dragondex-api/dragons`
+https://dragondex-api.nrmnqdds.com/dragons
 
 ### Search dragons
-`https://github.com/nrmnqdds/dragondex-api/dragons?name=volcano`
+https://dragondex-api.nrmnqdds.com/dragons?name=volcano
 
 ### Get random dragon
-`https://github.com/nrmnqdds/dragondex-api/dragons/random`
+https://dragondex-api.nrmnqdds.com/dragons/random
 
 ## License
 
