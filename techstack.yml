@@ -2,7 +2,7 @@ repo_name: nrmnqdds/dragondex-api
 report_id: 2b6d8b987d2bb5bbcb809ed157a436b3
 version: 0.1
 repo_type: Public
-timestamp: '2023-12-31T05:21:42+00:00'
+timestamp: '2024-01-05T08:13:31+00:00'
 requested_by: nrmnqdds
 provider: github
 branch: main
@@ -17,6 +17,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api
   detection_source: Repo Metadata
 - name: TypeScript
   description: A superset of JavaScript that compiles to clean JavaScript output
@@ -27,6 +28,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api
   detection_source: Repo Metadata
 - name: ExpressJS
   description: Sinatra inspired web development framework for node.js -- insanely
@@ -67,6 +69,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Frameworks (Full Stack)
   image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api/blob/main/package.json
   detection_source: package.json
   last_updated_by: nrmnqdds
   last_updated_on: 2023-12-29 05:04:54.000000000 Z
@@ -92,6 +95,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Code Review
   image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api/blob/main/package.json
   detection_source: package.json
   last_updated_by: qryskalyst20
   last_updated_on: 2023-10-06 20:12:55.000000000 Z
@@ -103,6 +107,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api
   detection_source: Repo Metadata
 - name: Jest
   description: Painless JavaScript Unit Testing
@@ -154,6 +159,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api/blob/main/package.json
   detection_source: package.json
   last_updated_by: qryskalyst20
   last_updated_on: 2023-10-06 20:12:55.000000000 Z
@@ -165,6 +171,7 @@ tools:
   category: Application Utilities
   sub_category: Static Web Hosting
   image_url: https://img.stackshare.io/service/7618/bHjpwZem_400x400.png
+  detection_source_url: https://github.com/nrmnqdds/dragondex-api/blob/main/vercel.json
   detection_source: vercel.json
   last_updated_by: nrmnqdds
   last_updated_on: 2023-12-29 05:22:11.000000000 Z
