@@ -12,5 +12,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
+      - name: Prebuild
+        run: npm install & npm run build & npm cache clean --force
       - name: Execute scraper
         run: node src/dragon-scraper/main.ts
