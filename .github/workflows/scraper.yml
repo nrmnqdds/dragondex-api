@@ -26,7 +26,7 @@ jobs:
       - name: 👷 Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DRAGONDEX_TOKEN }}
           commit-message: "🗃️ Update Dragons Catalog from ${{ github.run_id }}"
           title: "🗃️ Update Dragons Catalog"
           branch: dragondex-fetcher
