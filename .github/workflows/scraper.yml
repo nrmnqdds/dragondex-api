@@ -1,18 +1,33 @@
-name: Scheduled Scraper
 on:
   schedule:
     - cron: '0 0 */2 * *'  # Runs every 2 days at 00:00 UTC
+name: ✨ Dragondex-Fetcher
 jobs:
-  scrape:
+  build:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout repository
+      - name: 🚚 Get latest code
         uses: actions/checkout@v4
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+        
+      - name: 🍞 Use Bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18
-      - name: Prebuild
-        run: npm install & npm run build & npm cache clean --force
-      - name: Execute scraper
-        run: node src/dragon-scraper/main.ts
+          bun-version: "latest"
+      
+      - name: 🔨 Build Project
+        run: |
+          bun install
+        # bun run build
+          
+      - name: 🚧 Scrape
+        run: bun src/dragon-scraper/main.ts
+
+      - name: 👷 Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🗃️ Update Dragons Catalog from ${{ github.run_id }}"
+          title: "🗃️ Update Dragons Catalog"
+          branch: dragondex-fetcher
+          base: main
