@@ -5,23 +5,23 @@ name: ✨ Dragondex-Fetcher
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
-        
-      - name: 🍞 Use Bun
-        uses: oven-sh/setup-bun@v1
+
+      - name: 🍞 Setup Node
+        uses: actions/setup-node@v4
         with:
-          bun-version: "latest"
-      
+          node-version: "latest"
+
       - name: 🔨 Build Project
         run: |
-          bun install
+          npm install
         # bun run build
-          
+
       - name: 🚧 Scrape
-        run: bun src/dragon-scraper/main.ts
+        run: node src/dragon-scraper/main.ts
 
       - name: 👷 Create Pull Request
         uses: peter-evans/create-pull-request@v6
